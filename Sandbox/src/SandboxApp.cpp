@@ -1,4 +1,3 @@
-
 #include <Nemesis.h>
 
 class Sandbox : public Nemesis::Application

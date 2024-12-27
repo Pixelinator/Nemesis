@@ -1,0 +1,3 @@
+[submodule "Nemesis/vendor/spdlog"]
+	path = Nemesis/vendor/spdlog
+	url = https://github.com/gabime/spdlog
