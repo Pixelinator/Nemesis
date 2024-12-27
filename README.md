@@ -1,2 +1,15 @@
 # Nemesis
+
 Nemesis Engine
+
+## Documentation
+
+| Functionality          | Library                                            |
+| ---------------------- | -------------------------------------------------- |
+| Mesh Loading           | [assimp](https://github.com/assimp/assimp)         |
+| Physics                | [bullet](https://github.com/bulletphysics/bullet3) |
+| OpenGL Function Loader | [glad](https://github.com/Dav1dde/glad)            |
+| Windowing and Input    | [glfw](https://github.com/glfw/glfw)               |
+| OpenGL Mathematics     | [glm](https://github.com/g-truc/glm)               |
+| Texture Loading        | [stb](https://github.com/nothings/stb)             |
+| Logging                | [spdlog](https://github.com/gabime/spdlog)         |
