@@ -1,7 +1,9 @@
 #pragma once
 #include "Core.h"
+#include "Events/Event.h"
 
-namespace Nemesis {
+namespace Nemesis
+{
 	class NMS_API Application
 	{
 	public:
@@ -11,5 +13,5 @@ namespace Nemesis {
 		void Run();
 	};
 
-	Application* CreateApplication();
+	Application *CreateApplication();
 }

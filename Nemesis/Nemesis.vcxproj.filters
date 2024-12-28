@@ -4,6 +4,9 @@
     <Filter Include="Nemesis">
       <UniqueIdentifier>{19F0846B-85CF-0307-8EE7-8EDDFA456A68}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Nemesis\Events">
+      <UniqueIdentifier>{DD657A64-C933-6E6A-B2C7-DE909E344ACF}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Nemesis.h" />
@@ -15,6 +18,24 @@
     </ClInclude>
     <ClInclude Include="src\Nemesis\EntryPoint.h">
       <Filter>Nemesis</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Nemesis\Events\ApplicationEvent.h">
+      <Filter>Nemesis\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Nemesis\Events\Event.h">
+      <Filter>Nemesis\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Nemesis\Events\KeyCodes.h">
+      <Filter>Nemesis\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Nemesis\Events\KeyEvent.h">
+      <Filter>Nemesis\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Nemesis\Events\MouseCodes.h">
+      <Filter>Nemesis\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Nemesis\Events\MouseEvent.h">
+      <Filter>Nemesis\Events</Filter>
     </ClInclude>
     <ClInclude Include="src\Nemesis\Log.h">
       <Filter>Nemesis</Filter>

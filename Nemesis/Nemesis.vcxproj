@@ -79,7 +79,7 @@
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <PreprocessorDefinitions>NMS_PLATFORM_WINDOWS;NMS_BUILD_DLL;NMS_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>vendor\spdlog\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>src;vendor\spdlog\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
       <Optimization>Disabled</Optimization>
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
@@ -101,7 +101,7 @@
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <PreprocessorDefinitions>NMS_PLATFORM_WINDOWS;NMS_BUILD_DLL;NMS_RELEASE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>vendor\spdlog\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>src;vendor\spdlog\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <Optimization>Full</Optimization>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
@@ -127,7 +127,7 @@
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <PreprocessorDefinitions>NMS_PLATFORM_WINDOWS;NMS_BUILD_DLL;NMS_DIST;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>vendor\spdlog\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>src;vendor\spdlog\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <Optimization>Full</Optimization>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
@@ -153,6 +153,12 @@
     <ClInclude Include="src\Nemesis\Application.h" />
     <ClInclude Include="src\Nemesis\Core.h" />
     <ClInclude Include="src\Nemesis\EntryPoint.h" />
+    <ClInclude Include="src\Nemesis\Events\ApplicationEvent.h" />
+    <ClInclude Include="src\Nemesis\Events\Event.h" />
+    <ClInclude Include="src\Nemesis\Events\KeyCodes.h" />
+    <ClInclude Include="src\Nemesis\Events\KeyEvent.h" />
+    <ClInclude Include="src\Nemesis\Events\MouseCodes.h" />
+    <ClInclude Include="src\Nemesis\Events\MouseEvent.h" />
     <ClInclude Include="src\Nemesis\Log.h" />
   </ItemGroup>
   <ItemGroup>
