@@ -1,9 +1,7 @@
 #pragma once
-
+#include "nmspch.h"
 #include "Nemesis/Core.h"
 
-#include <string>
-#include <functional>
 
 namespace Nemesis {
 

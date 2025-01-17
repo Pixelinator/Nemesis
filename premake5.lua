@@ -18,6 +18,10 @@ project "Nemesis"
     targetdir ("bin/" .. outputdir.. "/%{prj.name}")
     objdir ("bin-int/" .. outputdir.. "/%{prj.name}")
 
+    pchheader "nmspch.h"
+    pchsource "Nemesis/src/nmspch.cpp"
+
+
     files
     {
         "%{prj.name}/src/**.h",

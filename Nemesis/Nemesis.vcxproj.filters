@@ -40,6 +40,7 @@
     <ClInclude Include="src\Nemesis\Log.h">
       <Filter>Nemesis</Filter>
     </ClInclude>
+    <ClInclude Include="src\nmspch.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Nemesis\Application.cpp">
@@ -48,5 +49,6 @@
     <ClCompile Include="src\Nemesis\Log.cpp">
       <Filter>Nemesis</Filter>
     </ClCompile>
+    <ClCompile Include="src\nmspch.cpp" />
   </ItemGroup>
 </Project>
