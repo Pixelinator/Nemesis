@@ -1,3 +1,6 @@
 [submodule "Nemesis/vendor/spdlog"]
 	path = Nemesis/vendor/spdlog
 	url = https://github.com/gabime/spdlog
+[submodule "Nemesis/vendor/GLFW"]
+	path = Nemesis/vendor/GLFW
+	url = https://github.com/TheCherno/GLFW

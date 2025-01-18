@@ -10,4 +10,12 @@
 	#error Nemesis only supports Windows!
 #endif
 
+#ifdef NMS_ENABLE_ASSERTS
+	#define NMS_ASSERT(x, ...) { if(!(x)) { NMS_ERROR("Assertion Failed: {0}", __VA_ARGS__); __debugbreak(); } }
+	#define NMS_CORE_ASSERT(x, ...) { if(!(x)) { NMS_CORE_ERROR("Assertion Failed: {0}", __VA_ARGS__); __debugbreak(); } }
+#else
+	#define NMS_ASSERT(x, ...)
+	#define NMS_CORE_ASSERT(x, ...)
+#endif
+
 #define BIT(x) (1 << x)

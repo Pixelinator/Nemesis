@@ -10,6 +10,12 @@ workspace "Nemesis"
 
 outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
 
+-- Include directories relative to root directory of the project
+IncludeDir = {}
+IncludeDir["GLFW"] = "Nemesis/vendor/GLFW/include"
+
+include "Nemesis/vendor/GLFW"
+
 project "Nemesis"
     location "Nemesis"
     kind "SharedLib"
@@ -31,7 +37,15 @@ project "Nemesis"
     includedirs
     {
         "%{prj.name}/src",
-        "%{prj.name}/vendor/spdlog/include"
+        "%{prj.name}/vendor/spdlog/include",
+        "%{IncludeDir.GLFW}"
+
+    }
+
+    links
+    {
+        "GLFW",
+        "opengl32.lib"
     }
 
     buildoptions
@@ -70,7 +84,6 @@ project "Nemesis"
 project "Sandbox"
     location "Sandbox"
     kind "ConsoleApp"
-
     language "C++"
 
     targetdir ("bin/" .. outputdir .. "/%{prj.name}")
