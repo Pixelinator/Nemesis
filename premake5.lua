@@ -21,6 +21,8 @@ project "Nemesis"
     kind "SharedLib"
     language "C++"
 
+    ignoredefaultlibraries { "MSVCRTD" }
+
     targetdir ("bin/" .. outputdir.. "/%{prj.name}")
     objdir ("bin-int/" .. outputdir.. "/%{prj.name}")
 
@@ -132,12 +134,3 @@ project "Sandbox"
     filter "configurations:Dist"
         defines "NMS_DIST"
         optimize "On"
-
-
-
-
-
-
-
-
-

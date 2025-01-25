@@ -93,6 +93,7 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <AdditionalDependencies>opengl32.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <ImportLibrary>..\bin\Debug-windows-x86_64\Nemesis\Nemesis.lib</ImportLibrary>
+      <IgnoreSpecificDefaultLibraries>MSVCRTD.lib</IgnoreSpecificDefaultLibraries>
     </Link>
     <PostBuildEvent>
       <Command>IF EXIST ..\bin\Debug-windows-x86_64\Nemesis\Nemesis.dll\ (xcopy /Q /E /Y /I ..\bin\Debug-windows-x86_64\Nemesis\Nemesis.dll ..\bin\Debug-windows-x86_64\Sandbox &gt; nul) ELSE (xcopy /Q /Y /I ..\bin\Debug-windows-x86_64\Nemesis\Nemesis.dll ..\bin\Debug-windows-x86_64\Sandbox &gt; nul)</Command>
@@ -121,6 +122,7 @@
       <OptimizeReferences>true</OptimizeReferences>
       <AdditionalDependencies>opengl32.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <ImportLibrary>..\bin\Release-windows-x86_64\Nemesis\Nemesis.lib</ImportLibrary>
+      <IgnoreSpecificDefaultLibraries>MSVCRTD.lib</IgnoreSpecificDefaultLibraries>
     </Link>
     <PostBuildEvent>
       <Command>IF EXIST ..\bin\Release-windows-x86_64\Nemesis\Nemesis.dll\ (xcopy /Q /E /Y /I ..\bin\Release-windows-x86_64\Nemesis\Nemesis.dll ..\bin\Release-windows-x86_64\Sandbox &gt; nul) ELSE (xcopy /Q /Y /I ..\bin\Release-windows-x86_64\Nemesis\Nemesis.dll ..\bin\Release-windows-x86_64\Sandbox &gt; nul)</Command>
@@ -149,6 +151,7 @@
       <OptimizeReferences>true</OptimizeReferences>
       <AdditionalDependencies>opengl32.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <ImportLibrary>..\bin\Dist-windows-x86_64\Nemesis\Nemesis.lib</ImportLibrary>
+      <IgnoreSpecificDefaultLibraries>MSVCRTD.lib</IgnoreSpecificDefaultLibraries>
     </Link>
     <PostBuildEvent>
       <Command>IF EXIST ..\bin\Dist-windows-x86_64\Nemesis\Nemesis.dll\ (xcopy /Q /E /Y /I ..\bin\Dist-windows-x86_64\Nemesis\Nemesis.dll ..\bin\Dist-windows-x86_64\Sandbox &gt; nul) ELSE (xcopy /Q /Y /I ..\bin\Dist-windows-x86_64\Nemesis\Nemesis.dll ..\bin\Dist-windows-x86_64\Sandbox &gt; nul)</Command>
