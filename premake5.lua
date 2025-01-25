@@ -21,8 +21,6 @@ project "Nemesis"
     kind "SharedLib"
     language "C++"
 
-    ignoredefaultlibraries { "MSVCRTD" }
-
     targetdir ("bin/" .. outputdir.. "/%{prj.name}")
     objdir ("bin-int/" .. outputdir.. "/%{prj.name}")
 
@@ -73,14 +71,17 @@ project "Nemesis"
 
     filter "configurations:Debug"
         defines "NMS_DEBUG"
+        buildoptions "/MDd"
         symbols "On"
     
     filter "configurations:Release"
         defines "NMS_RELEASE"
+        buildoptions "/MD"
         optimize "On"
     
     filter "configurations:Dist"
         defines "NMS_DIST"
+        buildoptions "/MD"
         optimize "On"
 
 project "Sandbox"
@@ -125,12 +126,15 @@ project "Sandbox"
 
     filter "configurations:Debug"
         defines "NMS_DEBUG"
+        buildoptions "/MDd"
         symbols "On"
     
     filter "configurations:Release"
         defines "NMS_RELEASE"
+        buildoptions "/MD"
         optimize "On"
     
     filter "configurations:Dist"
         defines "NMS_DIST"
+        buildoptions "/MD"
         optimize "On"

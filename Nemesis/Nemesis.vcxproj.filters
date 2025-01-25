@@ -43,6 +43,12 @@
     <ClInclude Include="src\Nemesis\Events\MouseEvent.h">
       <Filter>Nemesis\Events</Filter>
     </ClInclude>
+    <ClInclude Include="src\Nemesis\Layer.h">
+      <Filter>Nemesis</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Nemesis\LayerStack.h">
+      <Filter>Nemesis</Filter>
+    </ClInclude>
     <ClInclude Include="src\Nemesis\Log.h">
       <Filter>Nemesis</Filter>
     </ClInclude>
@@ -56,6 +62,12 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Nemesis\Application.cpp">
+      <Filter>Nemesis</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Nemesis\Layer.cpp">
+      <Filter>Nemesis</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Nemesis\LayerStack.cpp">
       <Filter>Nemesis</Filter>
     </ClCompile>
     <ClCompile Include="src\Nemesis\Log.cpp">
