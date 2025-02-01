@@ -12,9 +12,13 @@ outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
 
 -- Include directories relative to root directory of the project
 IncludeDir = {}
+IncludeDir["gtest"] = "vendor/gtest/googletest/include"
+IncludeDir["spdlog"] = "Nemesis/vendor/spdlog/include"
 IncludeDir["GLFW"] = "Nemesis/vendor/GLFW/include"
+IncludeDir["Glad"] = "Nemesis/vendor/Glad/include"
 
 include "Nemesis/vendor/GLFW"
+include "Nemesis/vendor/Glad"
 
 project "Nemesis"
     location "Nemesis"
@@ -37,16 +41,22 @@ project "Nemesis"
     includedirs
     {
         "%{prj.name}/src",
-        "%{prj.name}/vendor/spdlog/include",
-        "%{IncludeDir.GLFW}"
-
+        "%{IncludeDir.spdlog}",
+        "%{IncludeDir.GLFW}",
+        "%{IncludeDir.Glad}",
     }
 
     links
     {
         "GLFW",
+        "Glad",
         "opengl32.lib"
     }
+
+    defines {
+		"_CRT_SECURE_NO_WARNINGS",
+		"GLFW_INCLUDE_NONE"
+	}
 
     buildoptions
     {
@@ -100,8 +110,8 @@ project "Sandbox"
 
     includedirs
     {
-        "Nemesis/vendor/spdlog/include",
-        "Nemesis/src"
+        "Nemesis/src",
+        "%{IncludeDir.spdlog}"
     }
 
     links

@@ -4,3 +4,6 @@
 [submodule "Nemesis/vendor/GLFW"]
 	path = Nemesis/vendor/GLFW
 	url = https://github.com/TheCherno/GLFW
+[submodule "vendor/gtest"]
+	path = vendor/gtest
+	url = https://github.com/google/googletest.git
