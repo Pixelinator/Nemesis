@@ -16,9 +16,11 @@ IncludeDir["gtest"] = "vendor/gtest/googletest/include"
 IncludeDir["spdlog"] = "Nemesis/vendor/spdlog/include"
 IncludeDir["GLFW"] = "Nemesis/vendor/GLFW/include"
 IncludeDir["Glad"] = "Nemesis/vendor/Glad/include"
+IncludeDir["ImGui"] = "Nemesis/vendor/imgui"
 
 include "Nemesis/vendor/GLFW"
 include "Nemesis/vendor/Glad"
+include "Nemesis/vendor/imgui"
 
 project "Nemesis"
     location "Nemesis"
@@ -44,12 +46,14 @@ project "Nemesis"
         "%{IncludeDir.spdlog}",
         "%{IncludeDir.GLFW}",
         "%{IncludeDir.Glad}",
+        "%{IncludeDir.ImGui}"
     }
 
     links
     {
         "GLFW",
         "Glad",
+        "ImGui",
         "opengl32.lib"
     }
 

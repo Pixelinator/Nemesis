@@ -7,6 +7,9 @@
     <Filter Include="Nemesis\Events">
       <UniqueIdentifier>{DD657A64-C933-6E6A-B2C7-DE909E344ACF}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Nemesis\ImGui">
+      <UniqueIdentifier>{0354F18E-6F14-6DC5-384F-B642A4CEB1A1}</UniqueIdentifier>
+    </Filter>
     <Filter Include="Platform">
       <UniqueIdentifier>{2AC788B4-1694-E3BF-3FAD-D1672BD9184E}</UniqueIdentifier>
     </Filter>
@@ -43,6 +46,9 @@
     <ClInclude Include="src\Nemesis\Events\MouseEvent.h">
       <Filter>Nemesis\Events</Filter>
     </ClInclude>
+    <ClInclude Include="src\Nemesis\ImGui\ImGuiLayer.h">
+      <Filter>Nemesis\ImGui</Filter>
+    </ClInclude>
     <ClInclude Include="src\Nemesis\Layer.h">
       <Filter>Nemesis</Filter>
     </ClInclude>
@@ -63,6 +69,9 @@
   <ItemGroup>
     <ClCompile Include="src\Nemesis\Application.cpp">
       <Filter>Nemesis</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Nemesis\ImGui\ImGuiLayer.cpp">
+      <Filter>Nemesis\ImGui</Filter>
     </ClCompile>
     <ClCompile Include="src\Nemesis\Layer.cpp">
       <Filter>Nemesis</Filter>

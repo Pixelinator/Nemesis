@@ -7,3 +7,6 @@
 [submodule "vendor/gtest"]
 	path = vendor/gtest
 	url = https://github.com/google/googletest.git
+[submodule "Nemesis/vendor/imgui"]
+	path = Nemesis/vendor/imgui
+	url = https://github.com/TheCherno/imgui
