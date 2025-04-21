@@ -152,3 +152,72 @@ project "Sandbox"
         defines "NMS_DIST"
         buildoptions "/MD"
         optimize "On"
+
+project "GoogleTest"
+    location "GoogleTest"
+    kind "StaticLib"
+    language "C++"
+
+    targetdir ("bin/" .. outputdir .. "/%{prj.name}")
+    objdir ("bin-int/" .. outputdir .. "/%{prj.name}")
+
+    files
+    {
+        "vendor/gtest/googletest/src/gtest-all.cc",
+        "vendor/gtest/googletest/src/*.cc",
+        "vendor/gtest/googletest/src/*.h"
+    }
+
+    includedirs
+    {
+        "vendor/gtest/googletest",
+        "vendor/gtest/googletest/include",
+        "%{IncludeDir.gtest}"
+    }
+
+    filter "system:windows"
+        cppdialect "C++17"
+        staticruntime "On"
+        systemversion "latest"
+
+        defines
+        {
+            "NMS_PLATFORM_WINDOWS"
+        }
+
+project "NemesisTest"
+    location "NemesisTest"
+    kind "ConsoleApp"
+    language "C++"
+
+    targetdir ("bin/" .. outputdir .. "/%{prj.name}")
+    objdir ("bin-int/" .. outputdir .. "/%{prj.name}")
+
+    files
+    {
+        "%{prj.name}/src/**.h",
+        "%{prj.name}/src/**.cpp"
+    }
+
+    includedirs
+    {
+        "Nemesis/src",
+        "vendor/gtest/googletest/include",
+        "%{IncludeDir.gtest}"
+    }
+    
+    links
+    {
+        "Nemesis",
+        "GoogleTest"
+    }
+
+    filter "system:windows"
+        cppdialect "C++17"
+        staticruntime "On"
+        systemversion "latest"
+
+        defines
+        {
+            "NMS_PLATFORM_WINDOWS"
+        }
