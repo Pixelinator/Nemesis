@@ -52,6 +52,9 @@
     <ClInclude Include="src\Nemesis\ImGui\ImGuiLayer.h">
       <Filter>Nemesis\ImGui</Filter>
     </ClInclude>
+    <ClInclude Include="src\Nemesis\Input.h">
+      <Filter>Nemesis</Filter>
+    </ClInclude>
     <ClInclude Include="src\Nemesis\Layer.h">
       <Filter>Nemesis</Filter>
     </ClInclude>
@@ -67,12 +70,13 @@
     <ClInclude Include="src\Platform\OpenGL\ImGuiOpenGLRenderer.h">
       <Filter>Platform\OpenGL</Filter>
     </ClInclude>
+    <ClInclude Include="src\Platform\Windows\WindowsInput.h">
+      <Filter>Platform\Windows</Filter>
+    </ClInclude>
     <ClInclude Include="src\Platform\Windows\WindowsWindow.h">
       <Filter>Platform\Windows</Filter>
     </ClInclude>
     <ClInclude Include="src\nmspch.h" />
-    <ClInclude Include="src\Nemesis\Input.h" />
-    <ClInclude Include="src\Platform\Windows\WindowsInput.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Nemesis\Application.cpp">
@@ -93,10 +97,12 @@
     <ClCompile Include="src\Platform\OpenGL\ImGuiOpenGLRenderer.cpp">
       <Filter>Platform\OpenGL</Filter>
     </ClCompile>
+    <ClCompile Include="src\Platform\Windows\WindowsInput.cpp">
+      <Filter>Platform\Windows</Filter>
+    </ClCompile>
     <ClCompile Include="src\Platform\Windows\WindowsWindow.cpp">
       <Filter>Platform\Windows</Filter>
     </ClCompile>
     <ClCompile Include="src\nmspch.cpp" />
-    <ClCompile Include="src\Platform\Windows\WindowsInput.cpp" />
   </ItemGroup>
 </Project>

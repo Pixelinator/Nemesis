@@ -10,3 +10,6 @@
 [submodule "Nemesis/vendor/imgui"]
 	path = Nemesis/vendor/imgui
 	url = https://github.com/TheCherno/imgui
+[submodule "Nemesis/vendor/glm"]
+	path = Nemesis/vendor/glm
+	url = https://github.com/g-truc/glm

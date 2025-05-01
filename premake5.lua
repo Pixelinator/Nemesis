@@ -17,6 +17,7 @@ IncludeDir["spdlog"] = "Nemesis/vendor/spdlog/include"
 IncludeDir["GLFW"] = "Nemesis/vendor/GLFW/include"
 IncludeDir["Glad"] = "Nemesis/vendor/Glad/include"
 IncludeDir["ImGui"] = "Nemesis/vendor/imgui"
+IncludeDir["glm"] = "Nemesis/vendor/glm"
 
 include "Nemesis/vendor/GLFW"
 include "Nemesis/vendor/Glad"
@@ -47,7 +48,8 @@ project "Nemesis"
         "%{IncludeDir.spdlog}",
         "%{IncludeDir.GLFW}",
         "%{IncludeDir.Glad}",
-        "%{IncludeDir.ImGui}"
+        "%{IncludeDir.ImGui}",
+        "%{IncludeDir.glm}"
     }
 
     links
@@ -117,7 +119,8 @@ project "Sandbox"
     includedirs
     {
         "Nemesis/src",
-        "%{IncludeDir.spdlog}"
+        "%{IncludeDir.spdlog}",
+        "%{IncludeDir.glm}"
     }
 
     links
