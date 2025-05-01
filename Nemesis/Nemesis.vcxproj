@@ -166,11 +166,13 @@
     <ClInclude Include="src\Nemesis\Events\MouseCodes.h" />
     <ClInclude Include="src\Nemesis\Events\MouseEvent.h" />
     <ClInclude Include="src\Nemesis\ImGui\ImGuiLayer.h" />
+    <ClInclude Include="src\Nemesis\Input.h" />
     <ClInclude Include="src\Nemesis\Layer.h" />
     <ClInclude Include="src\Nemesis\LayerStack.h" />
     <ClInclude Include="src\Nemesis\Log.h" />
     <ClInclude Include="src\Nemesis\Window.h" />
     <ClInclude Include="src\Platform\OpenGL\ImGuiOpenGLRenderer.h" />
+    <ClInclude Include="src\Platform\Windows\WindowsInput.h" />
     <ClInclude Include="src\Platform\Windows\WindowsWindow.h" />
     <ClInclude Include="src\nmspch.h" />
   </ItemGroup>
@@ -181,6 +183,7 @@
     <ClCompile Include="src\Nemesis\LayerStack.cpp" />
     <ClCompile Include="src\Nemesis\Log.cpp" />
     <ClCompile Include="src\Platform\OpenGL\ImGuiOpenGLRenderer.cpp" />
+    <ClCompile Include="src\Platform\Windows\WindowsInput.cpp" />
     <ClCompile Include="src\Platform\Windows\WindowsWindow.cpp" />
     <ClCompile Include="src\nmspch.cpp">
       <PrecompiledHeader>Create</PrecompiledHeader>
